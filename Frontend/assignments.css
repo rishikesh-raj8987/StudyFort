@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff3c3c;
+}
+
+.logo span {
+  color: #fff;
+}
+
+nav a {
+  color: #bbb;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff3c3c;
+}
+
+.assignments-section {
+  padding: 40px 60px;
+  animation: fadeIn 1s ease;
+}
+
+.assignments-section h1 {
+  text-align: center;
+  color: #ff3c3c;
+  margin-bottom: 25px;
+}
+
+.upload-box {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.upload-box input {
+  background: #222;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ccc;
+}
+
+.upload-btn {
+  background: #ff3c3c;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #e03030;
+}
+
+.assignment-list {
+  display: grid;
+  gap: 20px;
+}
+
+.assignment-card {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.pending {
+  color: #ff3c3c;
+}
+
+.submitted {
+  color: #0f0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFort - Dashboard</title>
+
+    <!-- ✅ Correct CSS link (using forward slash) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- ======= NAVBAR ======= -->
+    <header class="navbar">
+        <div class="logo">Study<span>Fort</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="attendence.html">Attendance</a></li>
+                <li><a href="onlineclass.html">Online Classes</a></li>
+                <li><a href="pyqs.html">PYQs</a></li>
+            </ul>
+        </nav>
+        <div class="user-icon"><i class="fa-solid fa-user-circle"></i></div>
+    </header>
+
+    <!-- ======= HERO SECTION ======= -->
+    <section class="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <h1>Welcome to <span>StudyFort</span></h1>
+            <p>Your all-in-one academic companion.</p>
+            <a href="explore.html"><button class="btn">Explore Now</button></a>
+        </div>
+    </section>
+
+    <!-- ======= FEATURES SECTION ======= -->
+    <section class="features">
+        <h2 data-aos="fade-right">Quick Access</h2>
+        <div class="card-container">
+            <div class="card" data-aos="zoom-in">
+                <i class="fa-solid fa-book-open"></i>
+                <a href="notes.html"><h3>Notes</h3></a>
+                <p>Access and upload study materials easily.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fa-solid fa-file-lines"></i>
+                <a href="assignments.html"><h3>Assignments</h3></a>
+                <p>Submit and manage assignments before deadlines.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fa-solid fa-chart-line"></i>
+                <a href="attendence.html"><h3>Attendance</h3></a>   
+                <p>Track your class attendance in real time.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fa-solid fa-file-circle-question"></i>
+                <a href="pyqs.html"><h3>PYQs</h3></a>
+                <p>Browse and download previous year question papers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer>
+        <p>© 2025 StudyFort | Designed by Rishikesh Raj</p>
+    </footer>
+
+    <!-- JS for animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

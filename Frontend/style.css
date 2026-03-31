@@ -1,0 +1,212 @@
+/* ==============================
+   STUDYFORT - STYLISH DASHBOARD
+   ============================== */
+
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ==============================
+   NAVBAR
+   ============================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 15, 15, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background: rgba(15, 15, 15, 1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e50914;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #e50914;
+}
+
+.user-icon {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.user-icon:hover {
+  color: #e50914;
+}
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1350&q=80") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-content span {
+  color: #e50914;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #e50914;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #b0060f;
+}
+
+/* ==============================
+   FEATURES SECTION
+   ============================== */
+.features {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #e50914;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.3);
+}
+
+.card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #e50914;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: #777;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* ==============================
+   ANIMATIONS
+   ============================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .features {
+    padding: 80px 20px;
+  }
+}

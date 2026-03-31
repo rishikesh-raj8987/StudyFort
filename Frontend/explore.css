@@ -1,0 +1,58 @@
+/* ===== Explore Section ===== */
+.explore-section {
+  padding: 80px 10%;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.explore-section h2 {
+  font-size: 2rem;
+  color: #ff3c3c;
+  margin-bottom: 15px;
+}
+
+.explore-section .intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.explore-card {
+  background: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.explore-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.explore-card i {
+  font-size: 2rem;
+  color: #ff3c3c;
+  margin-bottom: 15px;
+}
+
+.explore-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.explore-card p {
+  font-size: 0.95rem;
+  color: #bbb;
+}

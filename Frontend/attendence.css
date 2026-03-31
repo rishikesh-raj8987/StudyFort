@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff3c3c;
+}
+
+.logo span {
+  color: #fff;
+}
+
+nav a {
+  color: #bbb;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ff3c3c;
+}
+
+.attendance-section {
+  padding: 40px 60px;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #ff3c3c;
+  margin-bottom: 25px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background: #1b1b1b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background: #ff3c3c;
+  color: #fff;
+}
+
+tr:hover {
+  background: #222;
+  transition: 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
